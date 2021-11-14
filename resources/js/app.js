@@ -1,6 +1,7 @@
 // window.axios = require('axios');
 // window.bootstrap = require('bootstrap');
 
+
 const search = document.querySelector('.button-search');
 const menu = document.querySelector('.button-menu');
 const input = document.querySelector('.input');
@@ -30,5 +31,6 @@ search.addEventListener('click',function(){
         input.style.display = "none" 
       } 
 });
+
 
 
