@@ -1,0 +1,127 @@
+// @import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('/image/cloud.jpeg');
+}
+
+.spacer {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    display: none;
+}
+
+nav {
+    margin-right: 30px;
+}
+
+.page_served-by {
+    margin: 10px;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+.page_served-by,
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 20px;
+}
+
+
+/* .page-header{
+    display: flex;
+    justify-content: center;
+} */
+
+img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.search {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+span {
+    padding: 7px;
+    text-align: center;
+}
+
+button {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: 15px;
+    display: flex;
+}
+
+.button-search,
+.button-menu {
+    padding: 3px;
+}
+
+.main-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-form {
+    width: 400px;
+    height: auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 1px 1px 3px 2px rgb(212, 212, 212);
+    display: none;
+}
+
+li {
+    margin: 20px;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+a {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+}
+
+.close-img {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.li-img {
+    text-align: right;
+}
