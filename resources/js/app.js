@@ -6,11 +6,28 @@ const menu = document.querySelector('.button-menu');
 const input = document.querySelector('.input');
 const form = document.querySelector('.form-form');
 const close = document.querySelector('.close-img');
-const closeBtn = document.querySelector('body');
+
 
 
 menu.addEventListener('click', () => form.style.display = 'inline');
 close.addEventListener('click', () => form.style.display = 'none');
+
+// if (form.style.display == 'inline') {
+//   window.addEventListener('click', () => form.style.display = 'none');
+// }
+
+let bodyClick = true;
+window.addEventListener('click', function(){
+  bodyClick = !bodyClick;
+  if(!bodyClick){
+    form.style.display = 'none';
+
+  }
+})
+
+
+
+
 
 
 
