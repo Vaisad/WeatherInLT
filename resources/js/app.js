@@ -12,24 +12,14 @@ const close = document.querySelector('.close-img');
 menu.addEventListener('click', () => form.style.display = 'inline');
 close.addEventListener('click', () => form.style.display = 'none');
 
-// if (form.style.display == 'inline') {
-//   window.addEventListener('click', () => form.style.display = 'none');
-// }
 
 let bodyClick = true;
 window.addEventListener('click', function(){
   bodyClick = !bodyClick;
   if(!bodyClick){
     form.style.display = 'none';
-
   }
-})
-
-
-
-
-
-
+});
 
 let temp = true;
 search.addEventListener('click',function(){
