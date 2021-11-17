@@ -26,6 +26,10 @@ input {
 nav {
     margin-right: 30px;
 }
+.served-by_text{
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
 
 .page_served-by {
     margin: 10px;
@@ -93,7 +97,7 @@ button {
 .form-form {
     width: 400px;
     height: auto;
-    background: #ffffff;
+    background: transparent;
     padding: 40px;
     box-shadow: 1px 1px 3px 2px rgb(212, 212, 212);
     // display: none;
@@ -125,3 +129,54 @@ a {
 .li-img {
     text-align: right;
 }
+
+.places{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+ .result_block{
+     text-align: center;
+     margin-top: 5rem;
+ }  
+ .city{
+     font-weight: bold;
+     letter-spacing: 1.5px;
+ }
+   
+    
+.fall, .wind{
+    margin-left: 10rem;
+    text-align: center;
+}
+ 
+.umbrella {
+    width: 24px;
+    height: 19px;
+}
+.wind_icon{
+    width: 24px;
+    height: 19px;
+}
+ .milimeter,.per_hour{
+     font-size: small;
+ }
+ .degrees, .celsius,.milimeters_numbers,.wind_number{
+     font-size: xx-large;
+ }
+ .celsius{
+     color: red;
+ }
+ .celsius,.milimeter,.per_hour{
+     padding-left: 0;
+ }
+ .degrees,.milimeters_numbers,.wind_number{
+     padding-right: 0;
+ }
+ .milimeter{
+     color: blue;
+     font-weight: bold;
+ }
+ .video{
+     background: transparent;
+ }
