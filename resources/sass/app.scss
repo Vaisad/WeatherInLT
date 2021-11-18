@@ -1,15 +1,17 @@
 // @import '~bootstrap/scss/bootstrap';
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-image: url('/image/cloud.jpeg');
+    background-image: url("/image/cloud.jpeg");
+    background-size: cover;
+    height: 100vh;
 }
 
 .spacer {
@@ -26,7 +28,7 @@ input {
 nav {
     margin-right: 30px;
 }
-.served-by_text{
+.served-by_text {
     word-spacing: 5px;
     letter-spacing: 1px;
 }
@@ -44,7 +46,6 @@ nav {
     justify-content: end;
     margin-left: 20px;
 }
-
 
 /* .page-header{
     display: flex;
@@ -130,53 +131,62 @@ a {
     text-align: right;
 }
 
-.places{
+.places {
     display: flex;
     margin-top: 3rem;
     margin-left: 3rem;
 }
- .result_block{
-     text-align: center;
-     margin-top: 5rem;
- }  
- .city{
-     font-weight: bold;
-     letter-spacing: 1.5px;
- }
-   
-    
-.fall, .wind{
-    margin-left: 10rem;
+.result_block {
+    text-align: center;
+    margin-top: 5rem;
+}
+.city {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.fall,
+.wind {
+    margin-left: 7rem;
     text-align: center;
 }
- 
+
 .umbrella {
     width: 24px;
     height: 19px;
 }
-.wind_icon{
+.wind_icon {
     width: 24px;
     height: 19px;
 }
- .milimeter,.per_hour{
-     font-size: small;
- }
- .degrees, .celsius,.milimeters_numbers,.wind_number{
-     font-size: xx-large;
- }
- .celsius{
-     color: red;
- }
- .celsius,.milimeter,.per_hour{
-     padding-left: 0;
- }
- .degrees,.milimeters_numbers,.wind_number{
-     padding-right: 0;
- }
- .milimeter{
-     color: blue;
-     font-weight: bold;
- }
- .video{
-     background: transparent;
- }
+.milimeter,
+.per_hour {
+    font-size: small;
+}
+.degrees,
+.celsius,
+.milimeters_numbers,
+.wind_number {
+    font-size: xx-large;
+}
+.celsius {
+    color: red;
+}
+.celsius,
+.milimeter,
+.per_hour {
+    padding-left: 0;
+}
+.degrees,
+.milimeters_numbers,
+.wind_number {
+    padding-right: 0;
+}
+.milimeter {
+    color: blue;
+    font-weight: bold;
+}
+.smallPerHour{
+    padding-right: 0;
+    padding-left: 0;
+}

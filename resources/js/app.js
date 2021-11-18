@@ -28,22 +28,33 @@ search.addEventListener('click', function () {
     }
 });
 
-
+//---------------Promises
 
 function fetchWeatherByCity(city) {
     return fetch(`./weather/places/${city}`)
         .then(response => response.json());
 }
+//-------------------------------
+
+
+function setParametersOnPage(city, airTemperature, totalPrecipitation, windSpeed, windGust) {
+    let cityPlace = document.querySelector('#city1');
+    let degrees = document.querySelector('.degrees');
+    let windNumber = document.querySelector('.wind_number');
+    let milimetersNumbers = document.querySelector('.milimeters_numbers');
+    let smallPerHour = document.querySelector('.smallPerHour');
+    cityPlace.textContent = city;
+    degrees.textContent = airTemperature;
+    windNumber.textContent = windSpeed;
+    milimetersNumbers.textContent = totalPrecipitation;
+    smallPerHour.textContent = windGust;
+}
+
 
 function getWeather(city) {
     fetchWeatherByCity(city).then(response => {
-        // for (let i = 0; i < response.forecastTimestamps.length; i++) {
-        //     console.log(response.forecastTimestamps[i].forecastTimeUtc);
-        // }
-        // console.log(response.forecastTimestamps);
 
-        console.log(response);
-        // console.log(`${response.forecastTimestamps[1].airTemperature} | ${response.forecastTimestamps[1].forecastTimeUtc}`);
+        setParametersOnPage(response.place.name, response.forecastTimestamps[1].airTemperature, response.forecastTimestamps[1].totalPrecipitation, response.forecastTimestamps[1].windGust, response.forecastTimestamps[1].windSpeed);
 
     })
 };
@@ -56,8 +67,6 @@ function logKey(e) {
         getWeather(value);
     }
 };
-
-
 
 //-----------------------------------------------------
 
@@ -78,5 +87,4 @@ function logKey(e) {
 
 
 
-    
-    
+
