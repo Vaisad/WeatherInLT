@@ -1,4 +1,4 @@
-// @import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 * {
@@ -22,7 +22,6 @@ body {
 input {
     width: 100%;
     height: 38px;
-    display: none;
 }
 
 nav {
@@ -47,15 +46,14 @@ nav {
     margin-left: 20px;
 }
 
-/* .page-header{
-    display: flex;
-    justify-content: center;
-} */
-
 img {
     width: 40px;
     height: 40px;
     margin-right: 15px;
+    // margin-bottom: 10px;
+}
+.umbrella, .wind_icon{
+    margin-bottom: 10px;
 }
 
 .search {
@@ -133,6 +131,8 @@ a {
 
 .places {
     display: flex;
+    text-align: center;
+    justify-content: center;
     margin-top: 3rem;
     margin-left: 3rem;
 }
@@ -173,7 +173,6 @@ a {
     color: red;
 }
 .celsius,
-.milimeter,
 .per_hour {
     padding-left: 0;
 }
@@ -186,7 +185,28 @@ a {
     color: blue;
     font-weight: bold;
 }
-.smallPerHour{
+.smallPerHour {
     padding-right: 0;
     padding-left: 0;
+}
+@media screen and(max-width: 768px) {
+    .buttons{
+        width: 100%;
+    }
+    .places {
+        display: block;
+        margin-left: 0;
+    }
+    .weather,
+    .city {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .fall {
+        margin-left: 2rem;
+        margin-bottom: 20px;
+    }
+    .wind {
+        margin-left: 2.5rem;
+    }
 }

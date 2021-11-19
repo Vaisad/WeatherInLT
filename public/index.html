@@ -16,21 +16,31 @@
 			<div class="layout-container">
 				<div class="page_served-by">
 					<div class="served-by">
+
 						<p class="served-by_text">Informacija Meteo Instituto</p>
 					</div>
 				</div>
-				<nav class="toolbar">
-					<div class="page-header">
-						<img src="./image/hot.png" alt="cloudy-image">
-					</div>
+				<nav class="toolbar d-flex flex-column flex-md-row">
+
+
+
 					<div class="spacer">
-						<label for="search"></label>
-						<input class="input" type="text" id="text-box" name="search" value="">
+						<div class="page-header d-flex">
+							<img src="./image/hot.png" alt="cloudy-image">
+							<label for="search"></label>
+							<input class="input d-none" type="text" id="text-box" name="search" value=""
+								autocomplete="off">
+						</div>
 					</div>
-					<button class="button-search"><img class="search" src="./image/search.png"
-							alt="button-search"><span>Paieška</span></button>
-					<button class="button-menu"><img class="menu" src="./image/menu.png"
-							alt="button-menu"><span>Meniu</span></button>
+
+					<div class="buttons d-flex justify-content-between justify-content-md-end mt-4 mt-md-0">
+						<button class="button-search"><img class="search" src="./image/search.png"
+								alt="button-search"><span>Paieška</span></button>
+						<button class="button-menu" id="menu"><img class="menu" src="./image/menu.png"
+								alt="button-menu"><span>Meniu</span></button>
+					</div>
+
+
 				</nav>
 			</div>
 		</div>
@@ -38,7 +48,7 @@
 	</header>
 	</div>
 	<div class="main-form">
-		<div class="form-form" style="display: none;">
+		<div class="form-form d-none">
 			<div class="form">
 				<ul>
 					<li class="li-img"><img class="close-img" src="./image/close.png" alt="close-img"></li>
@@ -62,8 +72,7 @@
 			<div class="fall">Krituliai : <span class="milimeters_numbers">0</span><span class="milimeter">mm</span>
 				<span> <img class="umbrella" src="./image/umbrella.png" alt=""> </span>
 			</div>
-			<div class="wind">Vėjas : <span class="wind_number">0</span> <span> <span class="per_hour">(<span
-							class="smallPerHour">0</span>) m/s</span>
+			<div class="wind">Vėjas : <span class="wind_number">0</span> <span class="ms">  m/s</span>
 					<img class="wind_icon" src="./image/wind1.png" alt=""> </span> </div>
 		</div>
 
