@@ -1,138 +1,93 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://kit.fontawesome.com/5853c23863.js" crossorigin="anonymous"></script>
-	<link href="css/app.css" rel="stylesheet">
-
-	<title>Hello, world!</title>
-</head>
-
-<body>
-	<header>
-		<div class="page_header">
-			<div class="layout-container">
-				<div class="page_served-by">
-					<div class="served-by">
-
-						<p class="served-by_text">Informacija Meteo Instituto</p>
-					</div>
-				</div>
-				<nav class="toolbar d-flex flex-column flex-md-row">
-
-
-
-					<div class="spacer">
-						<div class="page-header d-flex">
-							<img src="./image/hot.png" alt="cloudy-image">
-							<label for="search"></label>
-							<input class="input d-none" type="text" id="text-box" name="search" value=""
-								autocomplete="off">
-						</div>
-					</div>
-
-					<div class="buttons d-flex justify-content-between justify-content-md-end mt-4 mt-md-0">
-						<button class="button-search w-50"><img class="search" src="./image/search.png"
-								alt="button-search"><span>Paieška</span></button>
-						<button class="button-menu w-50" id="menu"><img class="menu" src="./image/menu.png"
-								alt="button-menu"><span>Meniu</span></button>
-					</div>
-
-
-				</nav>
-			</div>
-		</div>
-		</div>
-	</header>
-	</div>
-	<div class="main-form">
-		<div class="form-form d-none">
-			<div class="form">
-				<ul>
-					<li class="li-img"><img class="close-img" src="./image/close.png" alt="close-img"></li>
-					<li> <a href="#">Orų prognozė</a></li>
-					<li> <a href="#">Įspėjimai apie pavojų</a></li>
-					<li> <a href="#">Vandens temperatūra</a></li>
-					<li> <a href="#">Sniego gylis</a></li>
-					<li> <a href="#">Pagalba</a></li>
-					<li> <a href="#">Kontaktai</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="result_block">
-		<div class="city">
-			<h1 id="city1"></h1>
-		</div>
-		<div class="places">
-
-
-			<div class="weather">
-				Oras dabar : <span class="degrees">0</span> <span class="celsius">°</span> 
-			</div>
-
-
-
-			<div class="fall">
-				Krituliai : <span class="milimeters_numbers">0</span><span class="milimeter">mm</span>
-				<span> <img class="umbrella" src="./image/umbrella.png" alt=""> </span>
-			</div>
-
-
-			<div class="wind">
-				Vėjas : <span class="wind_number">0</span> <span class="ms"> m/s</span>
-				<img class="wind_icon" src="./image/wind1.png" alt=""> </span>
-			</div>
-		</div>
-
-
-
-
-		<div class="places2">
-
-
-			<div class="windDirection">
-				Vėjo kryptis : <span class="windDegrees">0</span><span class="smallWindDegrees">°</span><span>
-					<img class="direction"
-					src="./image/windDirectionRed.png" alt="windDirection"></span> 
-			</div>
-					
-					
-					
-					
-					
-					
-			<div class="relativeHumidity">
-				Oro drėgmė :<span class="humidity">0</span><span class="percent">%</span>
-				<span> <img class="imgHumidity" src="./image/humidity.png" alt=""></span>
-			</div>
-
-
-			<div class="conditionCode">
-				Oro sąlygos : <span class="condition">0</span>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-	<div class="footer">
-		<footer><span class="spanFooter">Created &nbsp; by &nbsp; Vaidas &nbsp; Šauklys</span><span class="far fa-copyright"> &nbsp; 2021</span>
-		</footer>
-	</div>
-
-
-
-
-
-
-
-	<script src="js/app.js"></script>
-</body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/5853c23863.js" crossorigin="anonymous"></script>
+      <link href="css/app.css" rel="stylesheet">
+      <title>Hello, world!</title>
+   </head>
+   <body>
+      <header>
+         <div class="page_header">
+            <div class="layout-container">
+               <div class="page_served-by">
+                  <div class="served-by">
+                     <p class="served-by_text">Informacija Meteo Instituto</p>
+                  </div>
+               </div>
+               <nav class="toolbar d-flex flex-column flex-md-row">
+                  <div class="spacer">
+                     <div class="page-header d-flex">
+                        <img src="./image/hot.png" alt="cloudy-image">
+                        <label for="search"></label>
+                        <input class="input d-none" type="text" id="text-box" name="search" value=""
+                           autocomplete="off">
+                     </div>
+                  </div>
+                  <div class="buttons d-flex justify-content-between justify-content-md-end mt-4 mt-md-0">
+                     <button class="button-search w-50"><img class="search" src="./image/search.png"
+                        alt="button-search"><span>Paieška</span></button>
+                     <button class="button-menu w-50" id="menu"><img class="menu" src="./image/menu.png"
+                        alt="button-menu"><span>Meniu</span></button>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         </div>
+      </header>
+      </div>
+      <div class="main-form">
+         <div class="form-form d-none">
+            <div class="form">
+               <ul>
+                  <li class="li-img"><img class="close-img" src="./image/close.png" alt="close-img"></li>
+                  <li> <a href="#">Orų prognozė</a></li>
+                  <li> <a href="#">Įspėjimai apie pavojų</a></li>
+                  <li> <a href="#">Vandens temperatūra</a></li>
+                  <li> <a href="#">Sniego gylis</a></li>
+                  <li> <a href="#">Pagalba</a></li>
+                  <li> <a href="#">Kontaktai</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="result_block">
+         <div class="city">
+            <h1 id="city1"></h1>
+         </div>
+         <div class="places">
+            <div class="weather">
+               Oras dabar : <span class="degrees">0</span> <span class="celsius">°</span> 
+            </div>
+            <div class="fall">
+               Krituliai : <span class="milimeters_numbers">0</span><span class="milimeter">mm</span>
+               <span> <img class="umbrella" src="./image/umbrella.png" alt=""> </span>
+            </div>
+            <div class="wind">
+               Vėjas : <span class="wind_number">0</span> <span class="ms"> m/s</span>
+               <img class="wind_icon" src="./image/wind1.png" alt=""> </span>
+            </div>
+         </div>
+         <div class="places2">
+            <div class="windDirection">
+               Vėjo kryptis : <span class="windDegrees">0</span><span class="smallWindDegrees">°</span><span>
+               <img class="direction"
+                  src="./image/windDirectionRed.png" alt="windDirection"></span> 
+            </div>
+            <div class="relativeHumidity">
+               Oro drėgmė :<span class="humidity">0</span><span class="percent">%</span>
+               <span> <img class="imgHumidity" src="./image/humidity.png" alt=""></span>
+            </div>
+            <div class="conditionCode">
+               Oro sąlygos : <span class="condition">0</span>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <footer><span class="spanFooter">Created &nbsp; by &nbsp; Vaidas &nbsp; Šauklys</span><span class="far fa-copyright"> &nbsp; 2021</span>
+         </footer>
+      </div>
+      <script src="js/app.js"></script>
+   </body>
 </html>
