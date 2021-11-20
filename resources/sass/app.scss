@@ -1,11 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family:'Merriweather Sans', sans-serif;
 }
 
 body {
@@ -22,6 +22,9 @@ body {
 input {
     width: 100%;
     height: 38px;
+    background: #ebf1f3;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 nav {
@@ -44,6 +47,7 @@ nav {
     align-items: center;
     justify-content: end;
     margin-left: 20px;
+    padding-top: 15px;
 }
 
 img {
@@ -88,18 +92,22 @@ button {
 }
 
 .main-form {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .form-form {
+    z-index: 999;
+    position: absolute;
     width: 400px;
     height: auto;
-    background: transparent;
+    background: #ebf1f3;
     padding: 40px;
     box-shadow: 1px 1px 3px 2px rgb(212, 212, 212);
-    // display: none;
+    top: 0;
+    margin-top: 20px;
 }
 
 li {
@@ -128,13 +136,13 @@ a {
 .li-img {
     text-align: right;
 }
-
-.places {
+.places,
+.places2{
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 3rem;
-    margin-left: 3rem;
+    margin: 3rem 5rem;
+    justify-content: space-between;
 }
 .result_block {
     text-align: center;
@@ -144,25 +152,29 @@ a {
     font-weight: bold;
     letter-spacing: 1.5px;
 }
-
-.fall,
-.wind {
-    margin-left: 7rem;
-    text-align: center;
-}
-
 .umbrella {
     width: 24px;
     height: 19px;
 }
+.imgHumidity,
+.direction,
 .wind_icon {
     width: 24px;
-    height: 19px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+.percent{
+    font-size: 20px;
+    // padding-left: 0;
 }
 .milimeter,
 .per_hour {
     font-size: small;
 }
+.smallWindDegrees,
+.condition,
+.humidity,
+.windDegrees,
 .degrees,
 .celsius,
 .milimeters_numbers,
@@ -172,10 +184,14 @@ a {
 .celsius {
     color: red;
 }
+.smallWindDegrees,
 .celsius,
 .per_hour {
     padding-left: 0;
 }
+.condition,
+.humidity,
+.windDegrees,
 .degrees,
 .milimeters_numbers,
 .wind_number {
@@ -189,24 +205,39 @@ a {
     padding-right: 0;
     padding-left: 0;
 }
+
+.footer{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
 @media screen and(max-width: 768px) {
+
+    body{
+        height: 100%;
+    }
     .buttons{
         width: 100%;
     }
+    .places2,
     .places {
         display: block;
-        margin-left: 0;
+        margin-left: 7rem;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
     }
-    .weather,
-    .city {
-        margin: 0;
+    .footer{
+        width: 100%;
+        bottom: 0;
+        position: relative;
         margin-bottom: 20px;
     }
-    .fall {
-        margin-left: 2rem;
-        margin-bottom: 20px;
-    }
-    .wind {
-        margin-left: 2.5rem;
+    .page_served-by{
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0;
     }
 }
